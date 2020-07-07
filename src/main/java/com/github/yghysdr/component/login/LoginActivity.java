@@ -27,7 +27,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.github.yghysdr.component.order.api.OrderApiFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -86,7 +85,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                OrderApiFactory.getIOrderApi().getOrderInfo("aaa");
                 attemptLogin();
             }
         });
